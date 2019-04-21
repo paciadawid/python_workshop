@@ -8,6 +8,7 @@ flask = "*"
 requests = "*"
 unittest2 = "*"
 pyhamcrest = "*"
+nose = "*"
 
 [dev-packages]
 
