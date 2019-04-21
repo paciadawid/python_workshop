@@ -1,11 +1,11 @@
-import pytest
+import unittest
 from hamcrest import *
 from rest_api_test.src.user_requests import UserManager
 
 user_manager = UserManager()
 
 
-class TestUserDatabase:
+class TestUserDatabase(unittest.TestCase):
 
     def test_server_responding(self):
         res = user_manager.get_status()
@@ -26,4 +26,4 @@ class TestUserDatabase:
 
 
 if __name__ == '__main__':
-    pytest.main()
+    unittest.main()

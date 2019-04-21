@@ -19,3 +19,6 @@ class UserManager:
 
     def get_all_users(self):
         return requests.get(self.base_url + "/users")
+
+    def clean_db(self):
+        return requests.get(self.base_url + "/clean_db")
