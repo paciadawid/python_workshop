@@ -18,4 +18,7 @@ def marble_game(num_of_players, last_marble):
                 except KeyError:
                     players_score[str(player_id)] = i + marble_list[target_position]
                 marble_list.remove(marble_list[target_position])
+    for key, value in players_score.items():
+        if value > high_score:
+            high_score = value
     return {"last_marble": last_marble, "high_score": high_score}
