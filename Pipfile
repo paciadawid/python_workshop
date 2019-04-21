@@ -9,6 +9,7 @@ requests = "*"
 unittest2 = "*"
 pyhamcrest = "*"
 nose = "*"
+behave = "*"
 
 [dev-packages]
 
